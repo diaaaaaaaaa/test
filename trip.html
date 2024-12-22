@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>攻略</title>
+    </head>
+<style>
+    section.animation-wrapper{
+        position: fixed;
+        width: 100%;
+        height:100vh;
+        background-color: rgb(255, 255, 255);
+        
+
+        section.animation{
+            margin-top: 10vh;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+        .slider{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+        }
+
+        .hero {
+            width: 100%;
+            height: 0;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    a{
+  
+        position:relative;
+        text-align :center ;
+        justify-content: center; 
+        align-content: center;      
+        flex-wrap: wrap;
+        font-size: 20px;
+
+
+    }
+
+
+    div{
+        display: flex;
+        text-align :center ;
+        justify-content: center; 
+        align-content: center;      
+        flex-wrap: wrap;
+        top: 50%;
+        left: 50%;
+    }
+</style>
+
+<body>
+ <section class="animation-wrapper">
+        <section class="animation">
+            <div class="hero">
+                <img src="/3IrioqVzWSMLqnRtaDfkBu.png" alt="map">
+            </div>
+        </section>
+        <div class="slider"></div>
+</section> 
+
+<a href="/trip1.html"><div>點此前往</div></a>
+
+</body>
+
+
+
+<datalist id="opt">
+</datalist>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+crossorigin="anonymous" 
+referrerpolicy="no-referrer">
+</script>
+<script src="./map.js"></script>
+</html>
